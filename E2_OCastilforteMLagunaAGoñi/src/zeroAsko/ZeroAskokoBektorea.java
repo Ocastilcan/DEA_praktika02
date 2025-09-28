@@ -12,9 +12,13 @@ public class ZeroAskokoBektorea {
 	 */
 	public void erantsiBukaeran(Nodo berria) {
 
-		
-		// HAU OSATU
-		
+		if (this.lehena == null) {
+			lehena = berria;
+			azkena = lehena;
+		} else {
+			this.azkena.hurrengoa = berria;
+			azkena = berria;
+		}
 		
 	}
 
@@ -29,11 +33,47 @@ public class ZeroAskokoBektorea {
 	 */
 	public static ZeroAskokoBektorea batuketa(ZeroAskokoBektorea b1, ZeroAskokoBektorea b2) {
 
+		ZeroAskokoBektorea b3 = new ZeroAskokoBektorea();
+		Nodo era1 = b1.lehena;
+		Nodo era2 = b2.lehena;
+		int pos, info;
+;		
+		while (era1 != null && era2 != null) {
+			if (era1.pos == era2.pos) {
+				pos = era1.pos;
+				info = era2.info + era1.info;
+				
+				era1 = era1.hurrengoa;
+				era2 = era2.hurrengoa;
+			} else if (era1.pos < era2.pos) {
+				pos = era1.pos;
+				info = era1.info;
+				
+				era1 = era1.hurrengoa;
+			} else {
+				pos = era2.pos;
+				info = era2.info;
+				
+				era2 = era2.hurrengoa;
+			}
+			
+			if (info != 0) {
+				Nodo era3 = new Nodo(pos, info);
+				b3.erantsiBukaeran(era3);
+			}
+		}
+		
+		while (era1 != null) {
+			b3.erantsiBukaeran(era1);
+			era1 = era1.hurrengoa;
+		}
+		
+		while (era2 != null) {
+			b3.erantsiBukaeran(era2);
+			era2 = era2.hurrengoa;
+		}
 
-		
-		// HAU OSATU
-		
-		return null;  // HAU EZABATU
+		return b3; 
 		
 		
 		
