@@ -18,9 +18,26 @@ public class Esaldia {
 	 */
 	public void testuinguruanEzabatu(String hitza, int zenb) {
 
-
-		// HAU OSATU
-	
+		NodoBikoitz<String> era1 = this.lehena;
+		NodoBikoitz<String> era2;
+		
+		while (!era1.datua.equals(hitza)) {
+			era1 = era1.hurrengoa;
+		}
+		era2 = era1;
+		for(int i = 0; i <= zenb; i++) {
+			era1 = era1.hurrengoa;
+			era2 = era2.aurrekoa;
+		}
+		if (era1 == null) {
+			era2.hurrengoa = null;
+		} else if (era2 == null) {
+			era1.aurrekoa = null;
+			lehena = era1;
+		} else {
+			era2.hurrengoa = era1;
+			era1.aurrekoa = era2;
+		}
 	
 	
 	
