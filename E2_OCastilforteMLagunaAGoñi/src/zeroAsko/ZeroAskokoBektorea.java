@@ -12,7 +12,7 @@ public class ZeroAskokoBektorea {
 	 */
 	public void erantsiBukaeran(Nodo berria) {
 
-
+		
 		// HAU OSATU
 		
 		
