@@ -39,8 +39,6 @@ public class Esaldia {
 			era1.aurrekoa = era2;
 		}
 	
-	
-	
 	}
 	
 	// Probatarako metodo lagungarriak. Ez aldatu
