@@ -18,12 +18,7 @@ public class ProbaEsaldia {
 		probaKasuaExekutatu("kaixo", "kaixo", 0);
 
 		System.out.println("\n\n### Proba 4 ###");
-		probaKasuaExekutatu("atzo erositako liburua ederra eta bikaina da", "ederra", 2);
-
-		System.out.println("\n\n### Proba 5 ###");
-		probaKasuaExekutatu("atzo erositako liburua ederra eta bikaina da", "ederra", 2);
-
-
+		probaKasuaExekutatu("atzo erositako liburua ederra eta bikaina da", "ederra", 3);
 		
 	}
 
