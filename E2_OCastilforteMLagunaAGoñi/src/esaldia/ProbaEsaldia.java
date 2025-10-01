@@ -14,6 +14,17 @@ public class ProbaEsaldia {
 		System.out.println("\n\n### Proba 2 ###");
 		probaKasuaExekutatu("atzo erositako liburua ederra eta bikaina da", "ederra", 2);
 
+		System.out.println("\n\n### Proba 3 ###");
+		probaKasuaExekutatu("kaixo", "kaixo", 0);
+
+		System.out.println("\n\n### Proba 4 ###");
+		probaKasuaExekutatu("atzo erositako liburua ederra eta bikaina da", "ederra", 2);
+
+		System.out.println("\n\n### Proba 5 ###");
+		probaKasuaExekutatu("atzo erositako liburua ederra eta bikaina da", "ederra", 2);
+
+
+		
 	}
 
 	private static void probaKasuaExekutatu(String esaldia, String hitza, int zenb) {
@@ -29,3 +40,4 @@ public class ProbaEsaldia {
 	}
 
 }
+
