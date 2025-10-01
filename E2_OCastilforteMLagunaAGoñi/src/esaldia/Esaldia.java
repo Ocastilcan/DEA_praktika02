@@ -29,7 +29,10 @@ public class Esaldia {
 			era1 = era1.hurrengoa;
 			era2 = era2.aurrekoa;
 		}
-		if (era1 == null) {
+		if (era1 == null && era2 == null) {
+			lehena = null;
+		}
+		else if (era1 == null) {
 			era2.hurrengoa = null;
 		} else if (era2 == null) {
 			era1.aurrekoa = null;
