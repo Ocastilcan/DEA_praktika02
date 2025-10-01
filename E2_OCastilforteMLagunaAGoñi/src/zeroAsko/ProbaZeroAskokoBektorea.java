@@ -11,6 +11,8 @@ public class ProbaZeroAskokoBektorea {
 		int[] arr1 = {0,0,0,7,0,0,12,0,3,0};
 		int[] arr2 = {0,4,0,7,0,0,-12,0,0,1};
 
+		System.out.println("#PROBA 1#");
+		
 		System.out.println("Bektore 1");
 		ZeroAskokoBektorea b1 = sortuArrayaBektoretik(arr1);
 		b1.inprimatu();
@@ -22,6 +24,34 @@ public class ProbaZeroAskokoBektorea {
 		ZeroAskokoBektorea bbatura = ZeroAskokoBektorea.batuketa(b1, b2);
 		System.out.println("Batutako bektorea");
 		bbatura.inprimatu();
+
+		System.out.println("\n #PROBA 2#");
+		arr1 = {};
+		arr2 = {};
+		System.out.println("Bektore 1");
+		ZeroAskokoBektorea b1 = sortuArrayaBektoretik(arr1);
+		b1.inprimatu();
+		System.out.println("Bektore 2");
+		ZeroAskokoBektorea b2 = sortuArrayaBektoretik(arr2);
+		b2.inprimatu();
+		ZeroAskokoBektorea bbatura = ZeroAskokoBektorea.batuketa(b1, b2);
+		System.out.println("Batutako bektorea");
+		bbatura.inprimatu();
+
+		System.out.println("\n #PROBA 3#");
+		arr1 = {0,0,2,0,0,0,4,1,0,-3};
+		arr2 = {};
+		System.out.println("Bektore 1");
+		ZeroAskokoBektorea b1 = sortuArrayaBektoretik(arr1);
+		b1.inprimatu();
+		System.out.println("Bektore 2");
+		ZeroAskokoBektorea b2 = sortuArrayaBektoretik(arr2);
+		b2.inprimatu();
+		ZeroAskokoBektorea bbatura = ZeroAskokoBektorea.batuketa(b1, b2);
+		System.out.println("Batutako bektorea");
+		bbatura.inprimatu();
+
+
 	}
 
 	// Probatarako metodo lagungarria, ez aldatu
